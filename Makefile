@@ -12,7 +12,7 @@ LIBFT_DIR	= libft
 LIBFT		= $(LIBFT_DIR)/libft.a
 
 CC			= gcc
-CFLAGS		= -Wall -Wextra -Werror -I$(LIBFT_DIR) -g
+CFLAGS		= -Wall -Wextra -Werror -I$(LIBFT_DIR)
 
 $(NAME): $(LIBFT) $(SRCS)
 	@$(CC) $(CFLAGS) $(SRCS) -L$(LIBFT_DIR) -lft -o $(NAME)
